@@ -1,0 +1,542 @@
+/* Shared styles for Build Yours and Contact */
+.extra-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 155px 0 85px;
+  min-height: 390px;
+}
+.build-hero {
+  background: linear-gradient(115deg, var(--soft), var(--tint) 60%, #fff8ef);
+}
+.contact-hero {
+  background: linear-gradient(115deg, var(--soft), var(--tint) 60%, #fff8ef);
+}
+.extra-hero .container {
+  position: relative;
+  z-index: 2;
+}
+.extra-hero h1 {
+  font:
+    700 clamp(3.5rem, 7vw, 6rem)/0.96 "Fredoka",
+    sans-serif;
+  letter-spacing: -3px;
+  margin: 16px 0;
+}
+.extra-hero h1 span {
+  color: var(--primary);
+}
+.extra-hero p {
+  max-width: 520px;
+  color: #765f58;
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+.extra-float {
+  position: absolute;
+  font-size: 3.7rem;
+  animation: extraFloat 3.4s ease-in-out infinite;
+}
+.float-one {
+  right: 15%;
+  top: 95px;
+}
+.float-two {
+  right: 8%;
+  bottom: 50px;
+  animation-delay: 0.6s;
+}
+.float-three {
+  right: 27%;
+  bottom: 25px;
+  color: var(--primary);
+  animation-delay: 1s;
+}
+@keyframes extraFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-13px) rotate(8deg);
+  }
+}
+.customizer-section,
+.contact-section {
+  padding: 70px 0 100px;
+  background: #fffaf4;
+}
+.customizer-card,
+.preview-card,
+.contact-info-card,
+.contact-form-card {
+  border: 1px solid #f0e7df;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(59, 41, 38, 0.055);
+  padding: 27px;
+}
+.step-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 19px;
+}
+.step-heading > span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--tint);
+  color: var(--primary);
+  font-weight: 700;
+}
+.step-heading h2,
+.preview-card h2,
+.contact-info-card h2,
+.contact-form-card h2 {
+  font:
+    600 1.6rem "Fredoka",
+    sans-serif;
+  margin: 0;
+}
+.step-heading p {
+  color: #a18c84;
+  font-size: 0.75rem;
+  margin: 4px 0 0;
+}
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.choice-card,
+.base-choice {
+  border: 1px solid #f0e7df;
+  background: #fffaf7;
+  border-radius: 17px;
+  padding: 13px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: #3b2926;
+  transition: 0.2s;
+}
+.choice-card > span,
+.base-choice > span {
+  font-size: 2rem;
+}
+.choice-card b,
+.base-choice b {
+  font:
+    500 0.78rem "Poppins",
+    sans-serif;
+}
+.choice-card small,
+.base-choice small {
+  font-size: 0.67rem;
+  color: #a18c84;
+}
+.choice-card:hover,
+.base-choice:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary-light);
+}
+.choice-card.selected,
+.base-choice.active {
+  background: var(--soft);
+  border: 2px solid var(--primary);
+  padding: 12px 7px;
+}
+.base-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.base-choice {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.topping-list {
+  display: grid;
+  gap: 10px;
+}
+.topping-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px;
+  border: 1px solid #f0e7df;
+  border-radius: 14px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.topping-list input {
+  accent-color: var(--primary);
+  width: 17px;
+  height: 17px;
+}
+.topping-list label span {
+  flex: 1;
+}
+.topping-list b {
+  font-size: 0.72rem;
+  color: #907b74;
+}
+.preview-card {
+  position: sticky;
+  top: 100px;
+  background: var(--soft);
+  overflow: hidden;
+}
+.preview-kicker {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  color: var(--primary);
+}
+.preview-card h2 {
+  font-size: 2rem;
+  margin-top: 8px;
+}
+.dessert-preview {
+  height: 245px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8px 0 12px;
+}
+.preview-scoops {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 88px;
+  max-width: 100%;
+}
+.preview-scoop {
+  width: 76px;
+  height: 76px;
+  border: 4px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  margin: 0 -8px;
+  box-shadow: 0 8px 15px #8d5c4b20;
+  animation: scoopPop 0.3s ease;
+}
+@keyframes scoopPop {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.preview-base {
+  font-size: 5.4rem;
+  line-height: 1.1;
+  filter: drop-shadow(0 10px 6px #8d5c4b20);
+}
+.preview-spark {
+  position: absolute;
+  color: #ffb72b;
+  font-size: 2rem;
+}
+.spark-a {
+  top: 35px;
+  left: 18%;
+}
+.spark-b {
+  right: 16%;
+  bottom: 45px;
+}
+.summary-list {
+  display: grid;
+  gap: 12px;
+  padding: 17px 0;
+  border-top: 1px dashed var(--primary-light);
+  border-bottom: 1px dashed var(--primary-light);
+}
+.summary-list > div,
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 0.76rem;
+}
+.summary-list span {
+  color: #907b74;
+}
+.summary-list strong {
+  text-align: right;
+  max-width: 65%;
+  font-weight: 600;
+}
+.total-line {
+  align-items: center;
+  padding: 18px 0;
+  font-size: 0.9rem;
+}
+.total-line strong {
+  font:
+    600 1.8rem "Fredoka",
+    sans-serif;
+  color: var(--primary);
+}
+.primary-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 40px;
+  padding: 14px 20px;
+  background: #3b2926;
+  color: #fff;
+  font:
+    500 0.8rem "Poppins",
+    sans-serif;
+  transition: 0.2s;
+}
+.primary-pill:hover {
+  background: var(--primary);
+  color: var(--on-primary);
+  transform: translateY(-2px);
+}
+.primary-pill span {
+  font-size: 1.1rem;
+}
+.preview-note,
+.form-note {
+  font-size: 0.68rem;
+  color: #a18c84;
+  text-align: center;
+  margin: 13px 0 0;
+}
+.contact-info-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  background: #3b2926;
+  color: white;
+}
+.contact-info-card h2 {
+  font-size: 2.5rem;
+  margin: 15px 0;
+  line-height: 1.05;
+}
+.contact-info-card > p {
+  color: #d6c4bd;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  max-width: 340px;
+  margin-bottom: 28px;
+}
+.contact-info-card .section-label {
+  color: var(--primary-light);
+}
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+.contact-info-item > span {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #ffffff15;
+  font-size: 1.2rem;
+}
+.contact-info-item b,
+.contact-info-item small {
+  display: block;
+}
+.contact-info-item b {
+  font-size: 0.8rem;
+}
+.contact-info-item small {
+  font-size: 0.7rem;
+  color: #d6c4bd;
+  margin-top: 4px;
+}
+.contact-socials {
+  display: flex;
+  gap: 9px;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+.contact-socials a {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ffffff40;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+}
+.contact-socials a:hover {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+.contact-decoration {
+  position: absolute;
+  right: -25px;
+  bottom: -50px;
+  font-size: 10rem;
+  opacity: 0.12;
+  transform: rotate(-15deg);
+}
+.contact-form-card h2 {
+  font-size: 2rem;
+  margin: 12px 0 8px;
+}
+.contact-form-card label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+.contact-form-card input,
+.contact-form-card select,
+.contact-form-card textarea {
+  width: 100%;
+  border: 1px solid #eee3dc;
+  border-radius: 13px;
+  padding: 12px 13px;
+  background: #fffdfa;
+  color: #3b2926;
+  font:
+    0.78rem "Poppins",
+    sans-serif;
+  outline: none;
+}
+.contact-form-card input:focus,
+.contact-form-card select:focus,
+.contact-form-card textarea:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 10%, transparent);
+}
+.field-error {
+  display: block;
+  min-height: 15px;
+  margin-top: 4px;
+  color: #d93f65;
+  font-size: 0.65rem;
+}
+.contact-form-card .form-note {
+  text-align: left;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .extra-hero {
+    padding: 135px 0 70px;
+    min-height: 350px;
+  }
+  .extra-hero h1 {
+    letter-spacing: -1.5px;
+  }
+  .extra-float {
+    font-size: 2.5rem;
+    opacity: 0.65;
+  }
+  .choice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .customizer-card,
+  .preview-card,
+  .contact-info-card,
+  .contact-form-card {
+    padding: 20px;
+  }
+  .preview-card {
+    position: static;
+  }
+  .contact-info-card h2 {
+    font-size: 2.1rem;
+  }
+}
+.about-art {
+  min-height: 330px;
+  border-radius: 30px;
+  background: linear-gradient(145deg, var(--tint), var(--soft));
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.about-art > span {
+  font-size: 9rem;
+  filter: drop-shadow(0 18px 10px #8d5c4b25);
+  animation: extraFloat 3s ease-in-out infinite;
+}
+.about-art i {
+  position: absolute;
+  right: 18%;
+  top: 17%;
+  font-size: 3rem;
+  color: var(--primary);
+}
+.about-art b {
+  position: absolute;
+  left: 9%;
+  bottom: 12%;
+  background: #fff;
+  border-radius: 50%;
+  width: 95px;
+  height: 95px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  font:
+    700 1rem "Fredoka",
+    sans-serif;
+  color: var(--primary);
+  transform: rotate(-12deg);
+  box-shadow: 0 8px 20px #8d5c4b18;
+}
+.about-heading {
+  font:
+    600 3rem/1.05 "Fredoka",
+    sans-serif;
+  margin: 14px 0;
+}
+.about-copy {
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: #806c64;
+}
+.about-value {
+  height: 100%;
+  padding: 25px;
+  border: 1px solid #f0e7df;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 10px 26px #3b29260a;
+}
+.about-value > span {
+  font-size: 2.3rem;
+}
+.about-value h3 {
+  font:
+    600 1.3rem "Fredoka",
+    sans-serif;
+  margin: 12px 0 7px;
+}
+.about-value p {
+  font-size: 0.77rem;
+  line-height: 1.7;
+  color: #907b74;
+  margin: 0;
+}

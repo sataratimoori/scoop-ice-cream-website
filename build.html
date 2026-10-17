@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="SCOOP — colorful ice cream, popsicles, milkshakes and desserts. Build your own happy scoop.">
+  <title>Build Your Scoop — SCOOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extra-pages.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="logo-scoop">●</span> SCOOP</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-icon">☰</span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link active" href="build.html">Build Yours</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="cart-btn" aria-label="Open cart">🛒 <b id="cartCount">0</b></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="extra-hero build-hero">
+      <div class="container">
+        <span class="section-label">YOUR TREAT, YOUR RULES</span>
+        <h1>Build your own<br><span>happy scoop.</span></h1>
+        <p>Pick your favorite flavors, add a little extra magic, and watch your custom dessert come together.</p>
+      </div>
+      <span class="extra-float float-one">🍓</span><span class="extra-float float-two">✨</span><span class="extra-float float-three">🍦</span>
+    </section>
+
+    <section class="customizer-section">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-7">
+            <div class="customizer-card">
+              <div class="step-heading"><span>01</span><div><h2>Choose your scoops</h2><p>Pick up to three flavors.</p></div></div>
+              <div class="choice-grid" id="flavorChoices">
+                <button type="button" class="choice-card" aria-pressed="false" data-flavor="Strawberry" data-emoji="🍓" data-color="#ffb4ca"><span>🍓</span><b>Strawberry</b><small>+$1.50</small></button>
+                <button type="button" class="choice-card" aria-pressed="false" data-flavor="Vanilla" data-emoji="🍦" data-color="#ffe6a6"><span>🍦</span><b>Vanilla</b><small>+$1.25</small></button>
+                <button type="button" class="choice-card" aria-pressed="false" data-flavor="Chocolate" data-emoji="🍫" data-color="#c99b82"><span>🍫</span><b>Chocolate</b><small>+$1.50</small></button>
+                <button type="button" class="choice-card" aria-pressed="false" data-flavor="Mint" data-emoji="🌿" data-color="#a9e8c5"><span>🌿</span><b>Mint</b><small>+$1.35</small></button>
+                <button type="button" class="choice-card" aria-pressed="false" data-flavor="Blueberry" data-emoji="🫐" data-color="#c9c1ff"><span>🫐</span><b>Blueberry</b><small>+$1.60</small></button>
+                <button type="button" class="choice-card" aria-pressed="false" data-flavor="Mango" data-emoji="🥭" data-color="#ffd27d"><span>🥭</span><b>Mango</b><small>+$1.40</small></button>
+              </div>
+
+              <div class="step-heading mt-4"><span>02</span><div><h2>Pick your base</h2><p>One perfect home for your scoops.</p></div></div>
+              <div class="base-options" id="baseChoices">
+                <button type="button" class="base-choice active" data-base="Cone" data-price="0.75"><span>🍦</span><b>Waffle cone</b><small>+$0.75</small></button>
+                <button type="button" class="base-choice" data-base="Cup" data-price="0.50"><span>🥣</span><b>Happy cup</b><small>+$0.50</small></button>
+              </div>
+
+              <div class="step-heading mt-4"><span>03</span><div><h2>Sprinkle the magic</h2><p>Choose any extras you love.</p></div></div>
+              <div class="topping-list">
+                <label><input type="checkbox" class="topping-check" value="Rainbow sprinkles" data-price="0.40"><span>🌈 Rainbow sprinkles</span><b>+$0.40</b></label>
+                <label><input type="checkbox" class="topping-check" value="Chocolate sauce" data-price="0.50"><span>🍫 Chocolate sauce</span><b>+$0.50</b></label>
+                <label><input type="checkbox" class="topping-check" value="Fresh berries" data-price="0.75"><span>🍓 Fresh berries</span><b>+$0.75</b></label>
+                <label><input type="checkbox" class="topping-check" value="Whipped cream" data-price="0.45"><span>☁️ Whipped cream</span><b>+$0.45</b></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <aside class="preview-card">
+              <span class="preview-kicker">YOUR MASTERPIECE</span>
+              <h2>Sweet on you!</h2>
+              <div class="dessert-preview" id="dessertPreview"><div class="preview-spark spark-a">✦</div><div class="preview-spark spark-b">✧</div><div id="previewScoops" class="preview-scoops"><span class="preview-scoop" style="background:#ffe6a6">🍦</span></div><div class="preview-base" id="previewBase">🍦</div></div>
+              <div class="summary-list">
+                <div><span>Flavors</span><strong id="summaryFlavors">Vanilla</strong></div>
+                <div><span>Base</span><strong id="summaryBase">Waffle cone</strong></div>
+                <div><span>Extras</span><strong id="summaryToppings">None yet</strong></div>
+              </div>
+              <div class="total-line"><span>Your total</span><strong id="buildTotal">$2.00</strong></div>
+              <button type="button" class="primary-pill w-100" id="addCustomToCart">Add my creation to cart <span>↗</span></button>
+              <p class="preview-note" id="buildFeedback">A little scoop of happiness, made by you.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"><div class="footer-logo">● SCOOP</div><p>Made for sweet moments.</p><div class="footer-links"><a href="about.html">Our story</a><a href="contact.html">Contact</a></div></div></footer>
+  <div class="toast-message" id="toastMessage" role="status" aria-live="polite">Your creation was added! 🍦</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/build.js"></script>
+</body>
+</html>

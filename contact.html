@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="SCOOP — colorful ice cream, popsicles, milkshakes and desserts. Build your own happy scoop.">
+  <title>Say Hello — SCOOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/extra-pages.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><span class="logo-scoop">●</span> SCOOP</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="menu-icon">☰</span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li><li class="nav-item"><a class="nav-link" href="build.html">Build Yours</a></li><li class="nav-item"><a class="nav-link" href="about.html">About</a></li><li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="cart-btn" aria-label="Open cart">🛒 <b id="cartCount">0</b></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="extra-hero contact-hero">
+      <div class="container">
+        <span class="section-label">WE'D LOVE TO HEAR FROM YOU</span>
+        <h1>Let's make<br><span>life sweeter.</span></h1>
+        <p>Questions, ideas, or just want to talk about ice cream? Our door is always open.</p>
+      </div>
+      <span class="extra-float float-one">💌</span><span class="extra-float float-two">🍒</span><span class="extra-float float-three">✦</span>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <div class="contact-info-card">
+              <span class="section-label">COME SAY HI</span>
+              <h2>Good vibes.<br>Great scoops.</h2>
+              <p>Have a question about our flavors or want to plan a sweet get-together? Send us a message.</p>
+              <div class="contact-info-item"><span>📍</span><div><b>Find our shop</b><small>123 Sweet Street, Your City</small></div></div>
+              <div class="contact-info-item"><span>🕒</span><div><b>Opening hours</b><small>Every day · 10:00 AM – 10:00 PM</small></div></div>
+              <div class="contact-info-item"><span>✉️</span><div><b>Email us</b><small>hello@scoop.example</small></div></div>
+              <div class="contact-socials"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="TikTok">♪</a><a href="#" aria-label="Facebook">f</a></div>
+              <div class="contact-decoration">🍦</div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form class="contact-form-card" id="contactForm" novalidate>
+              <span class="section-label">DROP US A NOTE</span>
+              <h2>Send a sweet message.</h2>
+              <div class="row g-3 mt-1">
+                <div class="col-md-6"><label for="contactName">Your name</label><input id="contactName" name="name" type="text" placeholder="e.g. Alex" required minlength="2"><small class="field-error"></small></div>
+                <div class="col-md-6"><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" placeholder="you@example.com" required><small class="field-error"></small></div>
+                <div class="col-12"><label for="contactTopic">What's it about?</label><select id="contactTopic" name="topic" required><option value="">Choose a topic</option><option>Flavor suggestion</option><option>Event or party</option><option>Feedback</option><option>Something else</option></select><small class="field-error"></small></div>
+                <div class="col-12"><label for="contactMessage">Your message</label><textarea id="contactMessage" name="message" rows="5" placeholder="Write your message here..." required minlength="10"></textarea><small class="field-error"></small></div>
+                <div class="col-12"><button type="submit" class="primary-pill">Send message <span>↗</span></button><p class="form-note" id="formFeedback" role="status">This demo form validates your message in the browser.</p></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"><div class="footer-logo">● SCOOP</div><p>Made for sweet moments.</p><div class="footer-links"><a href="index.html">Home</a><a href="menu.html">Menu</a></div></div></footer>
+  <div class="toast-message" id="toastMessage" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
